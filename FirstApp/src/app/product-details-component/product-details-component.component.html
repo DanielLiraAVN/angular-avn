@@ -1,3 +1,8 @@
-<p>
-  product-details-component works!
-</p>
+<h2>Product Details</h2>
+
+<div *ngIf="produto">
+  <h3>{{ produto.nome }}</h3>
+  <h4>{{ produto.price | currency }}</h4>
+  <p>{{ produto.descricao }}</p>
+
+</div>
